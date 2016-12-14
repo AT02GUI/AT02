@@ -17,6 +17,7 @@ import static org.testng.Assert.assertFalse;
 public class TestDeleteProject {
   ProjectMenuPage projectMenu;
   WebDriver driver;
+  String nameOfProject="test01";
 
   @BeforeMethod
   public void testCreateProject() {
@@ -32,7 +33,7 @@ public class TestDeleteProject {
     login.setPassword("P@ssw0rd");
     HomePage home = login.clickSubmit();
     CreateProjectPage project = home.clickCreateProject();
-    project.setProjectName("test01");
+    project.setProjectName(nameOfProject);
     project.clickSelectAccount("Fundacion Jala");
     projectMenu = project.clickCreate();
   }
@@ -42,7 +43,7 @@ public class TestDeleteProject {
     SettingsPage settingsPage = projectMenu.clickSettings();
     HomePage homePage = settingsPage.deleteProject();
     ProjectsWorkSpacesPage projectsWorkSpacesPage = homePage.clickProjectsAndWorkSpaces();
-    projectsWorkSpacesPage.clickLinkShowProjects();
+    projectsWorkSpacesPage.clickLinkShowProjects(nameOfProject);
     assertFalse(projectsWorkSpacesPage.existProject("test01"));
   }
 

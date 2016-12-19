@@ -1,0 +1,7 @@
+org\fundacion\automation\projects\TestCreateProject.class
+org\fundacion\automation\projects\TestCreateAccount.class
+org\fundacion\automation\projects\ModifyProjectTest.class
+org\fundacion\automation\projects\TestDeleteProject.class
+org\fundacion\automation\projects\Base.class
+org\fundacion\automation\projects\CreatePrivateProjectTest.class
+org\fundacion\automation\projects\CreatePublicProjectTest.class

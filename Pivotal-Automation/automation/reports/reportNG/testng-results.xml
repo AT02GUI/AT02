@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Projects" duration-ms="15491" started-at="2016-12-19T10:46:30Z" finished-at="2016-12-19T10:46:46Z">
+    <groups>
+    </groups>
+    <test name="Pivotal" duration-ms="15491" started-at="2016-12-19T10:46:30Z" finished-at="2016-12-19T10:46:46Z">
+      <class name="org.fundacion.automation.projects.CreatePrivateProjectTest">
+        <test-method status="PASS" signature="setSingletonDriver()[pri:0, instance:org.fundacion.automation.projects.CreatePrivateProjectTest@1f021e6c]" name="setSingletonDriver" is-config="true" duration-ms="7001" started-at="2016-12-19T10:46:23Z" finished-at="2016-12-19T10:46:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setSingletonDriver -->
+        <test-method status="PASS" signature="createPrivateProject()[pri:0, instance:org.fundacion.automation.projects.CreatePrivateProjectTest@1f021e6c]" name="createPrivateProject" duration-ms="15338" started-at="2016-12-19T10:46:30Z" finished-at="2016-12-19T10:46:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPrivateProject -->
+        <test-method status="PASS" signature="logOutProfile()[pri:0, instance:org.fundacion.automation.projects.CreatePrivateProjectTest@1f021e6c]" name="logOutProfile" is-config="true" duration-ms="131" started-at="2016-12-19T10:46:46Z" finished-at="2016-12-19T10:46:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutProfile -->
+        <test-method status="PASS" signature="close()[pri:0, instance:org.fundacion.automation.projects.CreatePrivateProjectTest@1f021e6c]" name="close" is-config="true" duration-ms="2350" started-at="2016-12-19T10:46:46Z" finished-at="2016-12-19T10:46:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- org.fundacion.automation.projects.CreatePrivateProjectTest -->
+    </test> <!-- Pivotal -->
+  </suite> <!-- Projects -->
+</testng-results>

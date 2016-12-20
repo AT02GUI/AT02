@@ -1,7 +1,6 @@
 package org.fundacion.pages.home;
 
 import org.fundacion.model.home.HomeModel;
-import org.fundacion.pages.help.HelpPageMain;
 import org.fundacion.pages.projects.CreateProjectPage;
 import org.fundacion.pages.projects.ProjectsWorkSpacesPage;
 import org.fundacion.pages.workspaces.CreateWorkspacePage;
@@ -40,9 +39,6 @@ public class HomePage {
   @FindBy(xpath = "//div/div/ul/li[4]/form/button")
   WebElement signOutBtn;
 
-  @FindBy(xpath = "//a[text()='Help']")
-  WebElement helpLink;
-
 
   public HomePage(WebDriver driver) {
     this.driver = driver;
@@ -72,11 +68,6 @@ public class HomePage {
   public CreateWorkspacePage clickCreateWorkspaceLink() {
     createWorkspace.click();
     return new CreateWorkspacePage(driver);
-  }
-
-  public HelpPageMain clickHelpPageButton(){
-    helpLink.click();
-    return new HelpPageMain(driver);
   }
 
 }

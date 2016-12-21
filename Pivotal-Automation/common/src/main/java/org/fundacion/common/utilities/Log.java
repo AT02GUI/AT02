@@ -7,31 +7,32 @@ import org.apache.log4j.Logger;
  */
 public class Log {
 
-    private static Log instance = null;
-    protected final static Logger log = Logger.getLogger(Log.class);
+  private static Log instance = null;
 
-    private Log() {
-        super();
-    }
+  protected final static Logger log = Logger.getLogger(Log.class);
 
-    public static Log getInstance() {
-        return instance = instance == null ? new Log() : instance;
-    }
+  private Log() {
+    super();
+  }
 
-    public void errorLog(String myclass, String msg) {
-        log.error("Name of class: " + myclass + "Message: " + msg);
-    }
+  public static Log getInstance() {
+    return instance = instance == null ? new Log() : instance;
+  }
 
-    public void debug(String myclass, String msg) {
-        log.debug("Name of class: " + myclass + "Message: " + msg);
-    }
+  public void errorLog(String myclass, String msg) {
+    log.error("Name of class: " + myclass + "Message: " + msg);
+  }
 
-    public void info(String myclass, String msg) {
-        log.info("Name of class: " + myclass + "Message: " + msg);
-    }
+  public void debug(String myclass, String msg) {
+    log.debug("Name of class: " + myclass + "Message: " + msg);
+  }
 
-    public void warning(String myclass, String msg) {
-        log.warn("Name of class: " + myclass + "Message: " + msg);
-    }
+  public void info(String myclass, String msg) {
+    log.info("Name of class: " + myclass + "Message: " + msg);
+  }
+
+  public void warning(String myclass, String msg) {
+    log.warn("Name of class: " + myclass + "Message: " + msg);
+  }
 
 }

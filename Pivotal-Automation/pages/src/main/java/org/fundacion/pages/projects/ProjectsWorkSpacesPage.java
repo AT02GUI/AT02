@@ -10,16 +10,19 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 /**
- * Created by Administrator on 12/13/2016.
+ * Created by SergioLanda on 12/13/2016.
  */
 public class ProjectsWorkSpacesPage {
   WebDriver driver;
-  WebDriverWait wait;
   String nameOfProject;
 
+  /**
+   * Elements for page of Work Spaces.
+   *
+   * @param driver initialize web driver.
+   */
   public ProjectsWorkSpacesPage(WebDriver driver) {
     this.driver = driver;
-    wait = new WebDriverWait(this.driver, 20);
     PageFactory.initElements(driver, this);
   }
 
@@ -29,21 +32,12 @@ public class ProjectsWorkSpacesPage {
   @FindBy(xpath = ProjectsWorkSpacesModel.project)
   private WebElement project;
 
-//  @FindBy(xpath = "//div/header/ul/li[3]/div")
-//  WebElement projectProfileName;
-
   public boolean existProject() {
     return project.getText().equalsIgnoreCase(nameOfProject);
   }
 
-//  public void clickProfileName(){
-//    wait.until(ExpectedConditions.elementToBeClickable(projectProfileName));
-//    projectProfileName.click();
-//  }
-
-
   public void clickLinkShowProjects(String nameOfProject) {
-    this.nameOfProject=nameOfProject;
+    this.nameOfProject = nameOfProject;
     linkShowProjects.click();
   }
 }

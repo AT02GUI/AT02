@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="Cucumber">
+    <test name="Login on Pivotal">
+        <classes>
+            <class name="org.bdd.automation.features.FeatureRunner"></class>
+        </classes>
+    </test>
+</suite>
